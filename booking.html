@@ -7,15 +7,23 @@
     <title>Booking</title>
 </head>
 <body>
-    <form action="dateofbirth.html">
+    <form onsubmit="booking()">
     <h2>Ticket Booking</h2>
-    <label for="date">Date :</label>
+    <label for="date">JOURNEY DATE :</label>
     <input type="date" placeholder="Enter Date" min="2021-01-01" max="2021-12-31" name="date" id="date">
     <br>
-    <label for="time">Time :</label>
+    <label for="time">JOURNEY TIME :</label>
     <input type="time" placeholder="Enter time" name="time" id="time">
     <br>
     <button>submit</button>
     </form>
+    <script>
+        function booking()
+        {
+            event.preventDefault(); //prevent default behavior
+            alert("booking");
+        }
+    </script>
+    <a href="dateofbirth.html">GO TO NEXTPAGE</a>
 </body>
 </html>

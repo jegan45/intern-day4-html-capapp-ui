@@ -7,17 +7,25 @@
     <title>Price Estimeter</title>
 </head>
 <body>
-    <form action="booking.html">
-    <select required>
+    <form >
+        <label for name="kilometer">SELECT CAB :</label>
+    <select id="cabtype" required>
         <option disabled selected>select cap type</option>
         <option value="micro">Micro</option>
         <option value="mini">mini</option>
         <option value="prime">prime</option>
     </select>
     <br>
+    <label for name="kilometer">FIX KM :</label>
     <input type="number" placeholder="Enter km" name="kilometer" id="km">
     <br>
-    <button>submit</button>
+    <p >THE FAREPRICE : Rs. <span id="fareprice">0</span> </p>
+    <br>
+    <p>THE GST : RS. <span id="gst">0</span></p>
+    <br>
+    <button onclick="priceestimetor()">submit</button>
     </form>
+    <script src="priceestimetor.js"></script> 
+    <a href="peaktime.html">Go to next page</a>
 </body>
 </html>

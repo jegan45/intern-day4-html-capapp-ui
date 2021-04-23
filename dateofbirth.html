@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="dateofbirth.js"></script>
+    <script src="priceestimetor.js"></script>
 </head>
 
 <body>
     <h2>Date of Birth</h2>
-    <label for="date">DOB :</label>
-    <input type="date" placeholder="Enter dob" name="date" id="date">
+    <label for="dateOfBirth">DOB :</label>
+    <input type="date" name="dateOfBirth" id="dateOfBirth">
     <br>
-    <label>Citizen</label>
-    <input type="checkbox" name="date" id="date">
     <br>
     <label>Gender</label>
     <input type="radio" name="gender" value="M">Male
     <input type="radio" name="gender" value="F">Female
+    <p>Age is: <span id="age"></span></p>
+    <label>Senoir Citizen</label>
+    <input type="checkbox" name="citizen" id="citizen">
+    <p >The Final Charge : Rs. <span id="finalcharge">0</span></p>
     <h3>Instructions</h3>
     <ul>
         <li>wear mask</li>
         <li>don't eat in cab</li>
     </ul>
-    <button>submit</button>
+    <button onclick="dateofbirth()">submit</button>
+    <br>
+    <a href="ride.html">Go to next page</a>
 </body>
 
 </html>
